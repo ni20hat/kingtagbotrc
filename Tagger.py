@@ -24,13 +24,13 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**🎉KingtagBot**\n ile Qrupunuzda bütün userləri tag ede Bilərsiniz \nƏmrlər üçün =======> /help yazın👑**",
+  await event.reply("**🎉RCtagBot**\n ile Qrupunuzda bütün userləri tag ede Bilərsiniz \nƏmrlər üçün =======> /help yazın👑**",
                     buttons=(
                    
-		      [Button.url('Məni Qrupa Qat ➕', 'https://t.me/kingtagbot?startgroup=a')],
-                      [Button.url('Yardım Qrupu 🛠', 'https://t.me/king_sohbet_33')],
-                      [Button.url('Resmi Kanal📣', 'https://t.me/gunes_isigi_33')],
-		      [Button.url('Tərtibatçı👨🏻‍💻', 'https://t.me/nihat_33')],
+		      [Button.url('Məni Qrupa Qat ➕', 'https://t.me/RCtagger_bot?startgroup=a')],
+                      [Button.url('Yardım Qrupu 🛠', 'https://t.me/mr_mrschanel')],
+                      [Button.url('Resmi Kanal📣', 'https://t.me/mr_mrschanel')],
+		      [Button.url('Tərtibatçı👨🏻‍💻', 'https://t.me/Devolaperdi')],
                     ),
                     link_preview=False
                    )
@@ -39,10 +39,10 @@ async def help(event):
   helptext = "**Telegramdakı İnkişaf Etmiş User Tağ Botu İle Qrup Userlərini Rahatça Tag edə bilərsiniz. 👑**\n\n**/tag - Userləri 5'li Tağ edər. ✅**\n\n**/soztag - Gözəl Sözlərlə Tağ edər. ✅**\n\n**/adtag Fərqli Adlarda Tağ edər. ✅**\n\n**/futbol - Futbolcu Adları ile tağ edər. ✅**\n\n**/etag - Smaliklər İlə Tag edər. ✅**\n\n**/tektag - Userləri Tək Tək Tağ edər. ✅**\n\n**/cancel - tağ etməyi dayandırır. **"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url(' Qrupa Qat➕', 'https://t.me/kingtagbot?startgroup=a')],
-                      [Button.url('Yardim👨‍💻', 'https://t.me/king_sohbet_33')],
-                      [Button.url('Resmi Kanal🔖', 'https://t.me/gunes_isigi_33')],
-		      [Button.url('Tərtibatci🧑‍🔧', 'https://t.me/nihat_33')],
+                      [Button.url(' Qrupa Qat➕', 'https://t.me/RCtagger_bot?startgroup=a')],
+                      [Button.url('Yardim👨‍💻', 'https://t.me/mr_mrschanel')],
+                      [Button.url('Resmi Kanal🔖', 'https://t.me/mr_mrschanel')],
+		      [Button.url('Tərtibatci🧑‍🔧', 'https://t.me/Devolaperdi')],
                     ),
                     link_preview=False
                    )
@@ -52,7 +52,7 @@ async def help(event):
   helptext = "**Çox özəllikli Tağ Botu Çalışan Qrup Sahibleri @kingtagBot Size Görə:\n\n📌 5-li tağ\n📌 smalik ilə tağ\n📌 təkli tağ\n📌 futbolçu adları ilə tağ\n📌adlar ilə tağ\n📌sözlər ilə \n📌 Yalnız adminləri tağ\n📌\n\n Böyle Çok özellikli @kingtagBot 'una Qrubunuzda adminlik verərək rahatlıqla , tağ edə bilərsiz **"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Botu Qrupa qat➕', 'https://t.me/kingtagbot?startgroup=a')],
+                      [Button.url('Botu Qrupa qat➕', 'https://t.me/RCtagger_bot?startgroup=a')],
                     ),
                     link_preview=False
                    )
@@ -119,7 +119,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Proses Uğurla dayandırıldı\n\n**Burda sizin reklamınız ola bilər @king_sohbet_33**❌")
+        await event.respond("Proses Uğurla dayandırıldı\n\n**Burda sizin reklamınız ola bilər @mr_mrschanel**❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -232,7 +232,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👥 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Proses Uğurla dayandırıldı\n\n**Burda sizin reklamımız ola bilir @king_sohbet_33**❌")
+        await event.respond("Proses Uğurla dayandırıldı\n\n**Burda sizin reklamımız ola bilir @mr_mrschanel**❌")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -435,7 +435,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(soz)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Proses Uğurla dayandırıldı\n\n**Burda sizin reklamınız ola bilər @king_sohbet_33**❌")
+        await event.respond("Proses Uğurla dayandırıldı\n\n**Burda sizin reklamınız ola bilər @mr_mrschanel**❌")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -503,7 +503,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(futbol)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Proses Uğurla dayandırıldı\n\n**Burda sizin reklamınız ola bilər @king_sohbet_33**❌")
+        await event.respond("Proses Uğurla dayandırıldı\n\n**Burda sizin reklamınız ola bilər @mr_mrschanel**❌")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -572,7 +572,7 @@ async def mentionall(event):
       usrnum += 1 
       usrtxt += f"[{random.choice(ad)}](tg://user?id={usr.id}) " 
       if event.chat_id not in anlik_calisan: 
-        await event.respond("Proses Uğurla dayandırıldı\n\nBurda sizin reklamınız ola bilər @king_sohbet_33❌") 
+        await event.respond("Proses Uğurla dayandırıldı\n\nBurda sizin reklamınız ola bilər @mr_mrschanel❌") 
         return 
       if usrnum == 1: 
         await client.send_message(event.chat_id, usrtxt, reply_to=msg) 
@@ -587,5 +587,5 @@ async def cancel(event):
   anlik_calisan.remove(event.chat_id)
   
   
-print(">> Bot işlək vəziyyətdədir 🚀 @nihat_33 bilgi ala bilərsən <<")
+print(">> Bot işlək vəziyyətdədir 🚀 @Devolaperdi bilgi ala bilərsən <<")
 client.run_until_disconnected()
